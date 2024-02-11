@@ -1,0 +1,23 @@
+{
+  "created": 1484938100,
+  "updated": 1484938100,
+  "name": "Github Commits",
+  "description": "This recipe summarizes the commits from a Github user in the last month",
+  "trigger": {
+    "type": "click"
+  },
+  "stack": [
+    {
+      "type": "code",
+      "description": "Log the Github commits from {github_name} from the last month",
+      "variables": ["github_name"]
+    },
+    {
+      "type": "llm",
+      "description": "These are the commits from {github_name} in the last month. Please summarize the activity of the user."
+    }
+  ],
+  "variables": {
+    "github_name": "SilenNaihin"
+  }
+}
